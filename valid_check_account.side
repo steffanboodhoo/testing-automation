@@ -1,0 +1,74 @@
+{
+  "id": "2eec23f0-062f-467f-a19f-5a514f4e9c22",
+  "version": "2.0",
+  "name": "test",
+  "url": "https://bonline.bmobile.co.tt",
+  "tests": [{
+    "id": "48408af6-e0d1-4508-bb96-c2cdffaa3f47",
+    "name": "check account",
+    "commands": [{
+      "id": "84dd7a7f-525f-418b-8fc4-ea75377dc960",
+      "comment": "",
+      "command": "open",
+      "target": "/guest/payment/inmate",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec1b5b3c-587e-4748-89d8-4c380508e611",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "698x691",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9475d24-f9ff-49bc-a175-94feaa83d76d",
+      "comment": "",
+      "command": "click",
+      "target": "id=account_number",
+      "targets": [
+        ["id=account_number", "id"],
+        ["css=#account_number", "css:finder"],
+        ["xpath=//input[@id='account_number']", "xpath:attributes"],
+        ["xpath=//form[@id='payment_form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a6ff4af-7fb9-42d2-9c5e-693f021ef8fc",
+      "comment": "",
+      "command": "type",
+      "target": "id=account_number",
+      "targets": [
+        ["id=account_number", "id"],
+        ["css=#account_number", "css:finder"],
+        ["xpath=//input[@id='account_number']", "xpath:attributes"],
+        ["xpath=//form[@id='payment_form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "10019"
+    }, {
+      "id": "477e6614-d495-4356-99c8-38de9a322596",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn_check_account",
+      "targets": [
+        ["id=btn_check_account", "id"],
+        ["css=#btn_check_account", "css:finder"],
+        ["xpath=//button[@id='btn_check_account']", "xpath:attributes"],
+        ["xpath=//form[@id='payment_form']/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "53140583-0aa3-4780-8b35-32236f6e5d73",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["48408af6-e0d1-4508-bb96-c2cdffaa3f47"]
+  }],
+  "urls": ["https://bonline.bmobile.co.tt/"],
+  "plugins": []
+}
